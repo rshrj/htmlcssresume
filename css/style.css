@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Avenir Next, Roboto, Open sans, Arial;
+    background-color: #E6E6E6;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background-image: url('../img/back.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    z-index: 1;
+}
+
+header > .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image: linear-gradient(rgba(120, 70, 40, 0.7), rgba(50, 30, 20, 0.9));
+}
+
+.user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 6rem;
+    height: 7rem;
+    width: 20rem;
+    color: white
+}
+
+.user > .img-box {
+    background-color: #E6E6E6;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100rem;
+    overflow: hidden;
+}
+
+.img-box > img {
+    height: 100%;
+}
+
+.user > .intro {
+    line-height: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 7rem;
+    top: 34%;
+    width: 23rem;
+}
+
+.btn {
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 0.8rem 1.3rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    font-size: 0.8rem;
+    color: #c3c3c3;
+    word-spacing: 0.01em;
+}
+
+main {
+    position: relative;
+    display: grid;
+    padding: 0 14rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    top: -5rem;
+    width: 100%;
+    z-index: 3;
+}
+
+.card {
+    position: relative;
+    width: 29rem;
+    height: 29rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 33px -16px rgba(163,163,163,1);
+}
+
+footer {
+    display: flex;
+    background-color: #774F38;
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+}
