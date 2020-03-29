@@ -38,7 +38,6 @@ header > .back {
     top: 25%;
     left: 6rem;
     height: 7rem;
-    width: 20rem;
     color: white
 }
 
@@ -47,6 +46,7 @@ header > .back {
     width: 7rem;
     height: 7rem;
     border-radius: 100rem;
+    margin-right: 2rem;
     overflow: hidden;
 }
 
